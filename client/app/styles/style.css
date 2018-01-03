@@ -1,0 +1,125 @@
+
+h1, h2 {
+    color:#FFF;
+}
+
+.center {
+    margin: 0 auto;
+    width: 65%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.centerTab {
+text-align: center;
+}
+.small {
+    color: grey;
+    font-weight: bold;
+}
+.ui.large.menu {
+   padding: 20px;
+   background-color: transparent;
+   border: none;
+}
+.ui.menu:not(.vertical) .item {
+    color: #FFF;
+    font-weight: 700;
+}
+.ui.secondary.pointing.menu a.item:hover {
+    background-color: transparent;
+    color: red;
+}
+
+#welcome {
+    margin-top: -90px;
+    height: 552px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 15px;
+    background-image: url('/assets/img/background2.jpg');
+    /* background-image: url('https://source.unsplash.com/collection/1537317/1280x552'); */
+}
+#welcome_title{
+    padding: 170px 0 0 20px;
+}
+#welcome_options{
+    padding: 20px 0 0 20px;
+    width: 50%;
+}
+
+/* search box */
+
+#searchbox {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 20px;
+}
+.btn-find {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height: 56px;
+    width: 100px;
+}
+.ui.search.selection.dropdown>input.search {
+    line-height: 2.7em;
+}
+.ui.selection.dropdown>.dropdown.icon {
+    line-height: 2.7em;
+}
+
+/* end of searchbox */
+
+.center_div {
+    margin: auto;
+    width: 0%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+/* Segment Product */
+.segment_product {
+    margin: 10px auto !important;
+    width: 75%;
+}
+.ui.secondary.pointing.menu{
+    color: #000 !important; 
+    
+}
+.productMenu > a.item {
+    color: grey !important;
+}
+.productMenu > a.item.active {
+    color: #000 !important;
+}
+.productGrid:hover {
+    background-color: #f2f2f2;
+    color: grey;
+    cursor: pointer;
+}
+.ui[class*="internally celled"].grid {
+    margin: 0 !important;
+}
+
+/* eof */
+
+.type_of_reg {
+    color:grey !important;
+}
+.type_of_reg.active {
+    color:#000 !important;
+}
+
+.gridSignup {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form_register_student {
+    margin: 20px;
+}
+
+.ui.basic.blue.button {
+    width: 100%;
+}
