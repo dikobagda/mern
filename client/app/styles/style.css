@@ -10,7 +10,7 @@ h1, h2 {
     padding: 10px;
 }
 .centerTab {
-text-align: center;
+    text-align: center;
 }
 .small {
     color: grey;
@@ -27,7 +27,7 @@ text-align: center;
 }
 .ui.secondary.pointing.menu a.item:hover {
     background-color: transparent;
-    color: red;
+    color: teal;
 }
 
 #welcome {
@@ -85,7 +85,6 @@ text-align: center;
 }
 .ui.secondary.pointing.menu{
     color: #000 !important; 
-    
 }
 .productMenu > a.item {
     color: grey !important;
@@ -109,7 +108,7 @@ text-align: center;
 }
 .type_of_reg.active {
     color:#000 !important;
-}
+} 
 
 .gridSignup {
     margin: 0 auto;
@@ -118,8 +117,13 @@ text-align: center;
 
 .form_register_student {
     margin: 20px;
+    width: 60%;
 }
 
 .ui.basic.blue.button {
     width: 100%;
+}
+
+.ui.form .field>.selection.dropdown>.dropdown.icon {
+    line-height: 1.2em;
 }

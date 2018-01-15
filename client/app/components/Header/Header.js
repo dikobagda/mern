@@ -31,7 +31,7 @@ store.dispatch({type: "DEC", payload: 1});
 class Header extends Component {
   constructor() {
     super();
-    this.state = {color: 'red'}
+    this.state = {color: 'teal'}
     this.menuItem = ['Home', 'Find Teacher', 'Find Student', 'Signup'];
   }
   
@@ -42,11 +42,14 @@ class Header extends Component {
   render() {
     return (
       <div>
+        
         <Menu pointing secondary size="large">
           <Menu.Item color={this.state.color} as={Link} to='/' name={this.menuItem[0]} active={this.state.activeItem === this.menuItem[0] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Item color={this.state.color} as={Link} to='/helloworld' name={this.menuItem[1]} active={this.state.activeItem === this.menuItem[1] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Item color={this.state.color} as={Link} to='/home' name={this.menuItem[2]} active={this.state.activeItem === this.menuItem[2] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Menu position='right'>
+        
+                        
             <RegisterModal name={ this.menuItem[3] }  />
             
           </Menu.Menu>
