@@ -31,27 +31,24 @@ store.dispatch({type: "DEC", payload: 1});
 class Header extends Component {
   constructor() {
     super();
-    this.state = {color: 'teal'}
-    this.menuItem = ['Home', 'Find Teacher', 'Find Student', 'Signup'];
+    this.state = {color: 'teal', modalOpen: false}
+    this.menuItem = ['Home', 'Find Teacher', 'Find Student', 'Signup', 'Classroom'];
   }
   
   handleItemClick(e, {name}) { 
-    this.setState({ activeItem: name});
+    this.setState({ activeItem: name });
   }
 
   render() {
     return (
       <div>
-        
         <Menu pointing secondary size="large">
           <Menu.Item color={this.state.color} as={Link} to='/' name={this.menuItem[0]} active={this.state.activeItem === this.menuItem[0] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Item color={this.state.color} as={Link} to='/helloworld' name={this.menuItem[1]} active={this.state.activeItem === this.menuItem[1] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Item color={this.state.color} as={Link} to='/home' name={this.menuItem[2]} active={this.state.activeItem === this.menuItem[2] } onClick={this.handleItemClick.bind(this)} />
+          <Menu.Item color={this.state.color} as={Link} to='/classroom' name={this.menuItem[4]} active={this.state.activeItem === this.menuItem[4] } onClick={this.handleItemClick.bind(this)} />
           <Menu.Menu position='right'>
-        
-                        
-            <RegisterModal name={ this.menuItem[3] }  />
-            
+            <RegisterModal modal = {this.state.modalOpen} name={ this.menuItem[3] }  />
           </Menu.Menu>
         </Menu>
       </div>

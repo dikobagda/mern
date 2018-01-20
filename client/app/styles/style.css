@@ -116,8 +116,7 @@ h1, h2 {
 }
 
 .form_register_student {
-    margin: 20px;
-    width: 60%;
+    margin: 5px;
 }
 
 .ui.basic.blue.button {
@@ -127,3 +126,53 @@ h1, h2 {
 .ui.form .field>.selection.dropdown>.dropdown.icon {
     line-height: 1.2em;
 }
+
+.col_regular_form {
+    width: 45% !important;
+}
+.col_divider {
+    margin: 0 auto;
+    width: 5% !important;
+}
+.col_social_form {
+    width: 45% !important;
+}
+
+.ui.vertical.divider {
+    height: 40% !important;
+}
+
+  input::-webkit-input-placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(191,191,191,.87);
+    font-weight: 500;
+  }
+  
+  input:-ms-input-placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(191,191,191,.87);
+    font-weight: 500;
+  }
+  
+  input:-moz-placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(191,191,191,.87);
+    font-weight: 500;
+  }
+  
+  input::-moz-placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(191,191,191,.87);
+    font-weight: 500;
+  }
+
+  .sosmed {
+      margin-top: 20px !important;
+      width: 60%;
+      height: 50px;
+      text-align: left !important;
+  }
+
+  .button-fullwidth {
+      width: 100%;
+  }
