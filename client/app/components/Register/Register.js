@@ -11,15 +11,13 @@ import RegularForm from './FormRegister';
 export default class Register extends React.Component {
   constructor(props) {
     super()
-    this.state={name: props.name, phone: null, modalOpen: props.modalOpen}
-    open  = () => this.setState({ modalOpen: true })
-    close = () => this.setState({ modalOpen: false })
+    this.state={name: props.name, phone: null}    
   }
   
   render() {
     return (
       <div>
-          <Modal open={this.state.modalOpen} onClose={this.close} trigger={<Menu.Item  onClick={this.open} name={this.state.name} as={Link} to='#' />}>
+          <Modal trigger={<Menu.Item name={this.state.name} as={Link} to='#' />}>
             <Modal.Header>Register</Modal.Header>
             <Modal.Content>
               <Modal.Description>
